@@ -1,0 +1,19 @@
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+
+    <h2>Scrivi una parola</h2>
+    
+    <!-- Il form intercetta la digitazione (oninput) e copia il valore dell'input nell'output -->
+    <form oninput="risultato.value = parola.value">
+        
+        <!-- Campo di input con ID 'parola' -->
+        <input type="text" id="parola" placeholder="Scrivi qualcosa...">
+            Hai scritto: <output id="risultato"></output>
+        
+    </form>
+
+</body>
+</html>
