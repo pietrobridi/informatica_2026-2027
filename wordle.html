@@ -9,31 +9,29 @@
     </style>
 <body>
 
-    <h1>indovina la parola</h1>
-    <h2>indovina la parola di 5 lettere</h2>
+    <h1 style="text-align: center;">indovina la parola</h1>
+    <h2 style="text-align: center;">la parola è composta da 5 lettere</h2>
     <h2>le lettere presenti e nel posto giusto si coloreranno di verde,quelle presenti ma nel posto sbagliato di giallo e quelle non presenti di rosso</h2>
 
 
       <form action =”/inserisci” method= ”POST”>
         <fieldset>
+         
           <legend>indovina la parola</legend>
-          <label for="lettera1">lettera1</label>
-          <input type="text" id="lettera1" name="lettera1" placeholder="Mario cristelli il bsooo ">
-          <label for="lettera2">lettera2</label>
-          <input type="text" id="lettera2" name="lettera2" placeholder="nicolo il grandissimo ">
-          <label for="lettera3">lettera3</label>
-          <input type="text" id="lettera3" name="lettera3" placeholder="Mario cristelli il bsooo ">
-          <label for="lettera4">lettera4</label>
-          <input type="text" id="lettera4" name="lettera4" placeholder="nicolo il grandissimo ">
-          <label for="lettera5">lettera5</label>
-          <input type="text" id="lettera5" name="lettera5" placeholder="nicolo il grandissimo ">
-          
+            <input type="text" id="lettera1" name="lettera1" maxlength="1" required>
+            <input type="text" id="lettera2" name="lettera2" maxlength="1" required>
+            <input type="text" id="lettera3" name="lettera3" maxlength="1" required>
+            <input type="text" id="lettera4" name="lettera4" maxlength="1" required>
+            <input type="text" id="lettera5" name="lettera5" maxlength="1" required>
+   
+          <button type="button">Invia</button>
         </fieldset>
-       
+        
+           <p>Hai inserito la lettera: <strong> <id ="lettera1"> </strong> </p>
      </form>
 
 
-    Hai scritto: <id="letter1">
+    
         
 </body>
 </html>
