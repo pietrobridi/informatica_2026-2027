@@ -1,0 +1,14 @@
+body {background-color: powderblue;}
+
+h1 {color: blue;}
+
+h2 {color: rgb(3, 3, 146);}
+
+p {color: red;}
+
+button {margin-top: 18px;
+  padding: 10px 20px;
+  background-color: #0b6e4f;
+  color: white;
+  border: none;
+  border-radius: 6px;}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <title>Indovina la parola</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='stile.css') }}">
+</head>
+<body>
+  <h1 style="text-align: center;">indovina la parola</h1>
+  <h2 style="text-align: center;">la parola è composta da 5 lettere</h2>
+  <h2>le lettere presenti e nel posto giusto si coloreranno di verde, quelle presenti ma nel posto sbagliato di giallo e quelle non presenti di rosso</h2>
+
+  <form action="/inserisci" method="POST">
+    <fieldset>
+      <legend>indovina la parola</legend>
+      <input type="text" size="1" id="lettera1" name="lettera1" maxlength="1" required>
+      <input type="text" size="1" id="lettera2" name="lettera2" maxlength="1" required>
+      <input type="text" size="1" id="lettera3" name="lettera3" maxlength="1" required>
+      <input type="text" size="1" id="lettera4" name="lettera4" maxlength="1" required>
+      <input type="text" size="1" id="lettera5" name="lettera5" maxlength="1" required>
+      <button type="submit">Invia</button>
+    </fieldset>
+    <p>Hai inserito la lettera: <strong id="anteprima-lettera1"></strong></p>
+  </form>
+</body>
+</html>
